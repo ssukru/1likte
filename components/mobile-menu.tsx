@@ -9,14 +9,14 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { MenuIcon } from "lucide-react";
+import { AlignRight } from "lucide-react";
 
 export default function MobileMenu() {
   return (
     <Sheet>
       <SheetTrigger asChild className="md:hidden">
         <Button variant="ghost" size="icon">
-          <MenuIcon className="h-6 w-6" />
+          <AlignRight className="h-6 w-6" />
         </Button>
       </SheetTrigger>
       <SheetContent
