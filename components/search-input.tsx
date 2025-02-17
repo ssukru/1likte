@@ -5,8 +5,10 @@ import { SearchIcon } from "lucide-react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { useDebounce } from "@/hooks/useDebounce";
+import { useTranslations } from "next-intl";
 
 export default function SearchInput() {
+  const t = useTranslations("search");
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -37,7 +39,7 @@ export default function SearchInput() {
       <Input
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        placeholder="Yazılarda arayın..."
+        placeholder={t("placeholder")}
         className="rounded-none pl-0 border-none text-[16px] leading-5 focus-visible:ring-0 placeholder:text-white/70"
       />
     </div>

@@ -52,5 +52,20 @@
       "title": "Finance",
       "description": "Streamline processes by accessing detailed invoice and payment information"
     }
+  },
+  "header": {
+    "education": "Education",
+    "login": "Login",
+    "recommendations": "Recommendations and answers from 1likte Team"
+  },
+  "search": {
+    "placeholder": "Search in articles..."
+  },
+  "footer": {
+    "share_feedback": "Share Feedback",
+    "report_bug": "Report Bug"
+  },
+  "mobile_menu": {
+    "login": "Login"
   }
 }

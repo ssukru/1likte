@@ -10,8 +10,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { AlignRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function MobileMenu() {
+  const t = useTranslations("mobile_menu");
+
   return (
     <Sheet>
       <SheetTrigger asChild className="md:hidden">
@@ -34,7 +37,7 @@ export default function MobileMenu() {
               variant="ghost"
               className="font-medium text-base justify-start text-white"
             >
-              Giriş Yap
+              {t("login")}
             </Button>
           </div>
         </div>

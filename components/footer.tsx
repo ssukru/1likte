@@ -1,12 +1,15 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
 interface FooterProps {
   className?: string;
 }
 
-export default function Footer({ className }: FooterProps) {
+export default async function Footer({ className }: FooterProps) {
+  const t = await getTranslations("footer");
+
   return (
     <footer className={cn("bg-white", className)}>
       <div className="container flex flex-col items-center gap-[50px]">
@@ -35,13 +38,13 @@ export default function Footer({ className }: FooterProps) {
               href="#"
               className="hover:text-primary transition-all duration-300"
             >
-              Görüşlerini Bildir
+              {t("share_feedback")}
             </Link>
             <Link
               href="#"
               className="hover:text-primary transition-all duration-300"
             >
-              Hata Bildir
+              {t("report_bug")}
             </Link>
           </div>
           <div className="flex items-center gap-5">

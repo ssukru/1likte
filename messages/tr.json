@@ -52,5 +52,20 @@
       "title": "Finans",
       "description": "Detaylı fatura ve ödeme bilgilerine ulaşarak süreçleri kolaylaştırın"
     }
+  },
+  "header": {
+    "education": "Eğitim",
+    "login": "Giriş Yap",
+    "recommendations": "1likte Ekibinden tavsiyeler ve yanıtlar"
+  },
+  "search": {
+    "placeholder": "Yazılarda arayın..."
+  },
+  "footer": {
+    "share_feedback": "Görüşlerini Bildir",
+    "report_bug": "Hata Bildir"
+  },
+  "mobile_menu": {
+    "login": "Giriş Yap"
   }
 }
