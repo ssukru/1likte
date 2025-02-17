@@ -5,8 +5,9 @@ export default function Logo() {
     <Image
       src="/assets/logo-text.svg"
       alt="logo"
-      width={68}
-      height={24}
+      className="w-[68px] h-[24px]"
+      width={93}
+      height={32}
     />
   );
 }
