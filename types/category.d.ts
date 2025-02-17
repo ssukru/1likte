@@ -1,6 +1,6 @@
 interface Category {
   id: string;
-  icon: string;
+  iconURL?: string;
   title: string;
   description: string;
   articleCount: number;
