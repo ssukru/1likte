@@ -1,9 +1,8 @@
 import VerticalSeperator from "@/components/vertical-seperator";
 import Logo from "@/components/logo";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { SearchIcon } from "lucide-react";
 import MobileMenu from "./mobile-menu";
+import SearchInput from "./search-input";
 
 export default function Header() {
   return (
@@ -33,13 +32,7 @@ export default function Header() {
             1likte Ekibinden tavsiyeler ve yanıtlar
           </h1>
         </div>
-        <div className="flex bg-secondary rounded-[10px] h-[50px] md:h-[56px] overflow-hidden items-center px-4 gap-2">
-          <SearchIcon className="w-6 h-6" />
-          <Input
-            placeholder="Yazılarda arayın..."
-            className="rounded-none pl-0 border-none text-[16px] leading-5 focus-visible:ring-0 placeholder:text-white/70"
-          />
-        </div>
+        <SearchInput />
       </div>
     </div>
   );
