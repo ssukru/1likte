@@ -1,1 +1,56 @@
-{}
+{
+  "categories": {
+    "cat-1": {
+      "title": "Başlarken",
+      "description": "Hesap bilgileri, paketleme ve partner programı"
+    },
+    "cat-2": {
+      "title": "Ürün Yönetimi",
+      "description": "Ürün ekleme, silme ve yönetme"
+    },
+    "cat-3": {
+      "title": "Sipariş Yönetimi",
+      "description": "Kargo operasyonu, iptaller ve faturalandırma"
+    },
+    "cat-4": {
+      "title": "İade Yönetimi",
+      "description": "Talepler, ihtilaflı iadeler ve süreçler"
+    },
+    "cat-5": {
+      "title": "Kargo Ayarları",
+      "description": "Anlaşmalar ve gönderim işlemleri"
+    },
+    "cat-6": {
+      "title": "İndirim Yönetimi",
+      "description": "İndirim tipleri, yönetimleri ve avantajları"
+    },
+    "cat-7": {
+      "title": "Kampanya Yönetimi",
+      "description": "Kampanyaya ürün ekleme ve kuralları"
+    },
+    "cat-8": {
+      "title": "Mağaza Kişiselleştirme",
+      "description": "Kişiselleştirilmiş kullanımı keşfedin"
+    },
+    "cat-9": {
+      "title": "Reklam",
+      "description": "Öne çıkmak için ihtiyaç duyduğunuz bilgilere erişin"
+    },
+    "cat-10": {
+      "title": "Raporlar ve Hesap Sağlığı",
+      "description": "Satışlarınız ve hesap durumunuz hakkında bilgi alın"
+    },
+    "cat-11": {
+      "title": "Mini",
+      "description": "Ürünleriniz için Mini içerik kullanımı"
+    },
+    "cat-12": {
+      "title": "Grup Alışverişi",
+      "description": "Oluşturma, yönetme ve kurallar hakkında"
+    },
+    "cat-13": {
+      "title": "Finans",
+      "description": "Detaylı fatura ve ödeme bilgilerine ulaşarak süreçleri kolaylaştırın"
+    }
+  }
+}

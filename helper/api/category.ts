@@ -6,8 +6,11 @@ interface CategoriesResponse {
   success: boolean;
 }
 
-export const fetchCategories = async (query?: string) => {
-  const url = createFullUrl("/api/categories");
+export const fetchCategories = async (
+  query?: string,
+  locale: string = "tr"
+) => {
+  const url = createFullUrl("/api/categories", locale);
   if (query) {
     url.searchParams.set("q", query);
   }

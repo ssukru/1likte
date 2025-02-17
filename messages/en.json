@@ -1,1 +1,56 @@
-{}
+{
+  "categories": {
+    "cat-1": {
+      "title": "Getting Started",
+      "description": "Account information, packaging and partner program"
+    },
+    "cat-2": {
+      "title": "Product Management",
+      "description": "Adding, removing and managing products"
+    },
+    "cat-3": {
+      "title": "Order Management",
+      "description": "Shipping operations, cancellations and billing"
+    },
+    "cat-4": {
+      "title": "Return Management",
+      "description": "Requests, disputed returns and processes"
+    },
+    "cat-5": {
+      "title": "Shipping Settings",
+      "description": "Agreements and shipping operations"
+    },
+    "cat-6": {
+      "title": "Discount Management",
+      "description": "Discount types, management and benefits"
+    },
+    "cat-7": {
+      "title": "Campaign Management",
+      "description": "Adding products to campaign and rules"
+    },
+    "cat-8": {
+      "title": "Store Customization",
+      "description": "Discover personalized usage"
+    },
+    "cat-9": {
+      "title": "Advertising",
+      "description": "Access the information you need to stand out"
+    },
+    "cat-10": {
+      "title": "Reports and Account Health",
+      "description": "Get information about your sales and account status"
+    },
+    "cat-11": {
+      "title": "Mini",
+      "description": "Mini content usage for your products"
+    },
+    "cat-12": {
+      "title": "Group Shopping",
+      "description": "About creation, management and rules"
+    },
+    "cat-13": {
+      "title": "Finance",
+      "description": "Streamline processes by accessing detailed invoice and payment information"
+    }
+  }
+}

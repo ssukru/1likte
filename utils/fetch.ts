@@ -4,7 +4,7 @@ if (!BASE_URL) {
   throw new Error("BASE_URL is not defined");
 }
 
-function customFetch(url: string, options: RequestInit = {}) {
+function customFetch(url: string, options: RequestInit = {}, locale?: string) {
   let fullUrl = "";
   if (url.startsWith(BASE_URL!)) {
     fullUrl = url;
@@ -12,11 +12,24 @@ function customFetch(url: string, options: RequestInit = {}) {
     fullUrl = `${BASE_URL}/${url}`;
   }
 
-  return fetch(fullUrl, options);
+  // Create URL object to handle search params
+  const urlObj = new URL(fullUrl);
+
+  if (locale) {
+    urlObj.searchParams.set("locale", locale);
+  }
+
+  return fetch(urlObj.toString(), options);
 }
 
 export default customFetch;
 
-export function createFullUrl(path: string) {
-  return new URL(`${BASE_URL}/${path}`);
+export function createFullUrl(path: string, locale?: string) {
+  const url = new URL(`${BASE_URL}/${path}`);
+
+  if (locale) {
+    url.searchParams.set("locale", locale);
+  }
+
+  return url;
 }
