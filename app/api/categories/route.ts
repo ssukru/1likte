@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getTranslations } from "next-intl/server";
 import { DATA } from "@/mock-data";
+import { sleep } from "@/utils/sleep";
 
 const SUPPORTED_LOCALES = ["en", "tr"] as const;
 const DEFAULT_LOCALE = "tr";
@@ -35,6 +36,9 @@ export async function GET(request: Request) {
           category.title.toLowerCase().includes(query.toLowerCase())
         )
       : categoriesWithTranslations;
+
+    const randomSleep = Math.floor(Math.random() * 1000) + 1000;
+    await sleep(randomSleep);
 
     return NextResponse.json(
       {
