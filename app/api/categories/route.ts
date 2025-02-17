@@ -37,7 +37,8 @@ export async function GET(request: Request) {
         )
       : categoriesWithTranslations;
 
-    const randomSleep = Math.floor(Math.random() * 1000) + 1000;
+    // added a random timeout to simulate an API call
+    const randomSleep = query ? 100 : Math.floor(Math.random() * 1000) + 1000;
     await sleep(randomSleep);
 
     return NextResponse.json(
