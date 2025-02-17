@@ -3,6 +3,7 @@ import Logo from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { SearchIcon } from "lucide-react";
+import MobileMenu from "./mobile-menu";
 
 export default function Header() {
   return (
@@ -24,6 +25,7 @@ export default function Header() {
                 Giriş Yap
               </Button>
             </div>
+            <MobileMenu />
           </div>
         </div>
         <div>
