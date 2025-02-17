@@ -16,7 +16,7 @@ export default function CategoryCard({ category, index }: CategoryCardProps) {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3, ease: "easeOut", delay: index * 0.1 }}
     >
-      <Card className="p-5 space-y-2.5">
+      <Card className="p-5 space-y-2.5 h-full">
         <CategoryIcon id={category.id} iconURL={category.iconURL} />
         <CardTitle className="text-sm md:text-base font-medium text-[#1C1C1E]">
           {category.title}

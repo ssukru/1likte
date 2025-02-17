@@ -67,5 +67,9 @@
   },
   "mobile_menu": {
     "login": "Login"
+  },
+  "locale_switcher": {
+    "label": "Change language",
+    "locale": "{locale, select, en {English} tr {Turkish} other {Unknown}}"
   }
 }

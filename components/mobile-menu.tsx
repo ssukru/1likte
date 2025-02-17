@@ -1,5 +1,7 @@
 "use client";
 
+import HorizontalSeperator from "@/components/horizontal-seperator";
+import LocaleSwitcher from "@/components/locale-switcher";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -32,14 +34,17 @@ export default function MobileMenu() {
           <SheetDescription></SheetDescription>
         </SheetHeader>
         <div className="flex flex-col h-full">
-          <div className="container flex flex-col py-6">
+          <div className="container flex flex-col gap-4">
             <Button
               variant="ghost"
               className="font-medium text-base justify-start text-white"
             >
               {t("login")}
             </Button>
+            <HorizontalSeperator />
+            <LocaleSwitcher className="w-fit" />
           </div>
+          <div className="container flex flex-col py-6"></div>
         </div>
       </SheetContent>
     </Sheet>

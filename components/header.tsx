@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import MobileMenu from "./mobile-menu";
 import SearchInput from "./search-input";
 import { getTranslations } from "next-intl/server";
+import LocaleSwitcher from "@/components/locale-switcher";
 
 export default async function Header() {
   const t = await getTranslations("header");
@@ -23,6 +24,7 @@ export default async function Header() {
           </div>
           <div className="flex items-center justify-end gap-4">
             <div className="hidden md:flex">
+              <LocaleSwitcher className="w-full md:w-full" />
               <Button variant={"ghost"} className="font-medium text-base">
                 {t("login")}
               </Button>

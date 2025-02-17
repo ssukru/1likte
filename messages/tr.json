@@ -67,5 +67,9 @@
   },
   "mobile_menu": {
     "login": "Giriş Yap"
+  },
+  "locale_switcher": {
+    "label": "Dil Değiştir",
+    "locale": "{locale, select, en {İngilizce} tr {Türkçe} other {Unknown}}"
   }
 }
